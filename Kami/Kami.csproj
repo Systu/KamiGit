@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3E4C589A-E6C7-4242-B8B1-46E681F94DBC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Kami</RootNamespace>
+    <AssemblyName>Kami</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SQLite, Version=1.0.60.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BazaDanych.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BazaDanych.Designer.cs">
+      <DependentUpon>BazaDanych.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DodajAbonament.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DodajAbonament.Designer.cs">
+      <DependentUpon>DodajAbonament.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dodaj Osobe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dodaj Osobe.Designer.cs">
+      <DependentUpon>Dodaj Osobe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DrukujDzien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DrukujDzien.Designer.cs">
+      <DependentUpon>DrukujDzien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Klient.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UsunOsobe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UsunOsobe.Designer.cs">
+      <DependentUpon>UsunOsobe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ZawieszenieKteringu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ZawieszenieKteringu.Designer.cs">
+      <DependentUpon>ZawieszenieKteringu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ZmienDni.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ZmienDni.Designer.cs">
+      <DependentUpon>ZmienDni.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zmien_Abonamenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zmien_Abonamenta.Designer.cs">
+      <DependentUpon>Zmien_Abonamenta.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="BazaDanych.resx">
+      <DependentUpon>BazaDanych.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DodajAbonament.resx">
+      <DependentUpon>DodajAbonament.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dodaj Osobe.resx">
+      <DependentUpon>Dodaj Osobe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DrukujDzien.resx">
+      <DependentUpon>DrukujDzien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="UsunOsobe.resx">
+      <DependentUpon>UsunOsobe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ZawieszenieKteringu.resx">
+      <DependentUpon>ZawieszenieKteringu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ZmienDni.resx">
+      <DependentUpon>ZmienDni.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zmien_Abonamenta.resx">
+      <DependentUpon>Zmien_Abonamenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
